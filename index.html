@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center ">
+            <img class="object-cover max-w-12 max-h-12 " src="Assets/logo.png" alt="">
+            <span class="text-lg font-medium font-display">Ecomm</span>
+        </a>
+        <div id="nav-menu " class="hidden md:flex gap-12">
+            <a class="font-medium hover:text-primary" href="#">Home</a>
+            <a class="font-medium hover:text-primary" href="#">Men</a>
+            <a class="font-medium hover:text-primary" href="#">Kids</a>
+            <a class="font-medium hover:text-primary" href="#">Women</a>
+        </div>
+        <button class="hidden md:flex p-2 gap-2 ">
+            <i class="fa-solid fa-heart text-gray-600 hover:text-primary"></i>
+            <i class="fa-solid fa-cart-shopping   text-gray-600 hover:text-primary"></i>
+        </button>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+
+        <div id="nav-dailog" class=" hidden fixed z-10 md:hidden  bg-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between ">
+                <a href="#" id="brand" class="flex gap-2 items-center ">
+                    <img class="object-cover max-w-12 max-h-12 " src="Assets/logo.png" alt="">
+                    <span class="text-lg font-medium font-display">Ecomm</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-close text-gray-600"></i>
+                </button>
+            </div>
+
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Men</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Kids</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Woman</a>
+            </div>
+
+            <div class="h-[1px] bg-gray-300"></div>
+            <button class=" mt-6 flex w-full m-3  p-3 gap-2 ">
+                <i class="fa-solid fa-heart text-gray-600 hover:text-primary"></i> 
+                <i class="fa-solid fa-cart-shopping   text-gray-600 hover:text-primary"></i>
+            </button>
+        </div>
+    </nav>
+
+<!-- main  -->
+    <main>
+<!-- Hero section  -->
+
+
+<div id="hero" class="min-h-screen"></div>
+</main>
+</body>
+<script src="script.js"></script>
+
+</html>
